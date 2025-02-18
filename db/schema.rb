@@ -24,8 +24,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_02_18_170434) do
 
   create_table "users", force: :cascade do |t|
     t.string "email"
-    t.string "password"
-    t.string "password_confirmation"
+    t.string "password_digest"
     t.string "country", default: ""
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
